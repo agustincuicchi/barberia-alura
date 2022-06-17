@@ -166,6 +166,7 @@ nav li {
     box-sizing: border-box;
     border: black 2px solid;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .productos {
@@ -309,4 +310,25 @@ thead {
     background-color: gray;
     color: white;
     font-weight: bold;
+}
+
+
+/*medias querys*/
+
+@media screen and (max-width: 480px) {
+    .caja, .principal, .mapaContenido, .contenidoDiferenciales, .video {
+        width: auto;
+    }
+    .mapa {
+        padding: 15px 10px;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .diferencialesUl, .imagenDiferenciales {
+        width: 100%;
+    }
 }
